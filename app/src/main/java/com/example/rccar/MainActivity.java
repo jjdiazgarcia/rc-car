@@ -8,9 +8,13 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
+import android.widget.EditText;
+
 import com.handle.network.Network;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +29,10 @@ public class MainActivity extends AppCompatActivity {
         if (wifiDevice.getState() != WifiManager.WIFI_STATE_ENABLED) {
             wifiDevice.enableWifiPopUp(MainActivity.this).show();
         } else {
-
+            Intent intent = new Intent(MainActivity.this, CarControl.class);
+            intent.putExtra(EXTRA_MESSAGE, R.string.app_name);
+            finish();
+            startActivity(intent);
         }
     }
 
