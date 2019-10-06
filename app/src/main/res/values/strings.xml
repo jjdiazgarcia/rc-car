@@ -3,9 +3,11 @@
     <string name="enable_wifi">Please, enable WiFi in WiFi settings and connect to RC WiFi</string>
     <string name="configure_wifi_accept">Go to Wifi settings</string>
     <string name="configure_wifi_deny">Close</string>
-    <string name="forward">Forward</string>
-    <string name="backward">Backward</string>
-    <string name="left">Left</string>
-    <string name="right">Right</string>
     <string name="battery_level">Battery level</string>
+    <string name="forward_arrow">Forward arrow</string>
+    <string name="backward_arrow">Backward arrow</string>
+    <string name="left_arrow">Left arrow</string>
+    <string name="right_arrow">Right arrow</string>
+    <string name="car_background">Car background</string>
+    <string name="signal_level">Signal level</string>
 </resources>
